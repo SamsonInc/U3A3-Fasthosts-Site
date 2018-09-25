@@ -1,0 +1,63 @@
+﻿/*Dealing with the roboto web font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*Raised button (one style)*/
+.button-raised {
+	text-decoration: none;
+	font-family: Roboto;
+	color: white;
+	background-color: #0099FF;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 8px 18px;
+	border-radius: 2px;
+	font-weight: 500;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	transition: ease-in 0.3s;
+}
+
+.button-raised:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #47B5FF;
+    transition: ease-in 0.3s;
+}
+
+.button-raised:active {
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#75C7FF;
+    border:none;
+    transition: ease-in 0.1s;
+}
+
+.button-raised:focus{
+    border:none;
+    outline:none;
+}
+
+.button-raised:disabled{
+    background-color:#424242;
+    color:#212121;
+    opacity:0.52;
+    box-shadow:none;
+}
+
+
+/*Inline button light*/
+
+.button-inline {
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: 500;
+	padding: 8px 18px;
+	border-radius: 2px;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	transition: ease-out 0.3s;
+}
+
+.button-inline:focus{
+    border:none;
+    outline:none;
+}

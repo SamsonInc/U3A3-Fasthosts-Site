@@ -1,0 +1,138 @@
+﻿.navbar-button{
+    display:inline-block;
+}
+
+body {
+    background-color: white;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:100;
+}
+
+.upper-nav-bar {
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.lower-nav-bar{
+    overflow:hidden;
+
+}
+
+.lower-nav-bar-behindButtons{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.loggedInText{
+	font-family:Roboto;
+    font-size:14px;
+    color:white;
+    padding-top:20px;
+}
+
+.upper-nav-item{
+    display:block;
+    padding:30px;
+}
+
+.logo{
+    padding:0;
+    margin:auto;
+}
+
+.navbar-button a {
+    text-decoration: none;
+    font-family:Roboto;
+    color: white;
+    font-size: 14px;
+    padding: 15px 14px;
+    display: block;
+    transition: ease-in 0.2s;
+}
+
+.navbar-button a:hover {
+    background-color: #0099FF;
+    transition: ease-out 0.2s;
+}
+
+.nav-button-left{
+    float:left;
+}
+
+.nav-button-right{
+    float:right;
+}
+
+.page-center {
+    width: 80%;
+    margin: auto; 
+    padding:0;
+}
+
+.footer-upper-button a {
+    padding: 15px 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family:Roboto;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.footer-upper-button a:hover {
+    background-color: #47B5FF;
+    transition: ease-out 0.2s;
+}
+
+.footer-upper{
+    overflow:hidden;
+}
+
+.footer-lower{
+    overflow:hidden;
+    width:100%;
+}
+
+#legal-information{
+    float:left;
+    overflow:hidden;
+}
+
+#legal-information p {
+	font-family: Roboto;
+	color: white;
+	padding: 8px 0;
+}
+
+#footer-logo{
+    float:left;
+    padding-right:20px;
+}
+
+#legal-info-container{
+    padding:24px 0;
+}
+
+.md-14{
+    font-size:14px;
+}
+
+footer{
+    bottom:0;
+    position:fixed;
+    width:100%;
+    display:block;
+}
+
+body{
+    height:100%;
+    padding-bottom:150px;
+}

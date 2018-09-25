@@ -1,0 +1,100 @@
+﻿.primary-1 {
+    background-color: #282D3B;
+}
+
+.primary-2 {
+    background-color: #485989;
+}
+
+.accent-1 {
+    background-color: #0099FF;
+}
+
+.dark-1 {
+    background-color: #303030;
+}
+
+.dark-2 {
+    background-color: #424242;
+}
+
+.colour-foreground {
+    background-color: white;
+    border-bottom-color: white;
+}
+
+.colour-background {
+    background-color: white;
+    border-bottom-color: white;
+}
+
+p{
+    color:black;
+    opacity:0.84;
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    color:black;
+}
+
+.GridView{
+    border-color:black;
+}
+
+.GridView th{
+    border-color:black;
+    color:black;
+}
+
+.GridView td{
+    border-color:black;
+    color:black;
+    opacity:0.84;
+}
+
+.text{
+    color:black;
+}
+
+.black{
+    background-color:black;
+    border-bottom-color:black;
+}
+
+.black-text{
+    color:black;
+}
+
+.red{
+    color:red;
+}
+
+.title-divider {
+    border-bottom-color: black;
+    color: black;
+}
+
+.button-inline {
+    color: #75C7FF;
+    background-color: white;
+    transition: ease-out 0.3s;
+}
+
+.button-inline:hover{
+    background-color: #E8E8E8;
+    transition:ease-in 0.3s;
+}
+
+.button-inline:active {
+    background-color: #75C7FF;
+    transition: ease 0.1s;
+    color: white;
+}
+
+.promo-item {
+    background-color: white;
+}

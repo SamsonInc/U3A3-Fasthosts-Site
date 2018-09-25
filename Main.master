@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Fasthosts</title>
+    <link href="CSS/buttonSheet.css" rel="stylesheet" />
+    <link href="CSS/CSSReset.css" rel="stylesheet" />
+    <link href="CSS/standard.css" rel="stylesheet" />
+    <link href="CSS/headAndFoot.css" rel="stylesheet" />
+    <link runat="server" id="theme" href="CSS/StandardColoursLight.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Content/Slick/slick-theme.css" rel="stylesheet" />
+    <link href="Content/Slick/slick.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    <base href="~/" />
+    </asp:ContentPlaceHolder>
+</head>
+<body class="colour-background">
+    <form id="form1" runat="server">
+        <header>
+            <div class="nav-bar">
+                <div class="upper-nav-bar primary-1">
+                    <div class="page-center">
+                        <img class="logo" src="../../Content/img/logo (1).png" />
+                        <p class="loggedInText nav-button-right" runat="server" id="LoggedInAsText">Logged in as: </p>
+                    </div>
+                </div>
+                <div class="lower-nav-bar primary-2">
+                    <div class="page-center">
+                        <ul class="lower-nav-bar-behindButtons primary-2">
+                            <li class="navbar-button primary-2 nav-button-left"><a href="/Pages/Home.aspx?src=">Home</a></li>
+                            <li class="navbar-button primary-2 nav-button-left"><a href="/Pages/TLDs.aspx">TLDs</a></li>
+                            <li runat="server" id="loginButton" class="navbar-button primary-2 nav-button-right" visible="true"><a href="/Pages/logIn.aspx" runat="server" id="loginbuttonLink" CausesValidation="false" onserverclick="loginbuttonLink_ServerClick">Login</a></li>
+                            <li runat="server" id="registerButton" class="navbar-button primary-2 nav-button-right" visible="true"><a href="/Pages/register.aspx">Register</a></li>
+                            <li runat="server" id="logOutButton" class="navbar-button primary-2 nav-button-right" visible="false"><a href="#" runat="server" id="logoutButtonLink" onserverclick="logOut">Log Out</a></li>
+                            <li runat="server" id="accountButton" class="navbar-button primary-2 nav-button-right" visible="false"><a href="/Pages/account.aspx">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <footer>
+            <div class="footer-upper accent-1">
+                <div class="page-center">
+                    <ul>
+                        <li class="footer-upper-button nav-button-left accent-1"><a href="#">About Us</a></li>
+                        <li class="footer-upper-button nav-button-left accent-1"><a href="/Pages/Contact.aspx">Contact Us</a></li>
+                        <li class="footer-upper-button nav-button-left accent-1"><a href="#">Blog</a></li>
+                        <li class="footer-upper-button nav-button-left accent-1"><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-lower primary-1">
+                <div id="legal-info-container" class="page-center">
+                    <img id="footer-logo" src="../../Content/img/logo (1).png" />
+                        <div id="legal-information">
+                            <p>© 1999-2018 Fasthosts Internet Limited. All rights reserved. <br/></p>
+                            <p>Fasthosts is the trading name of Fasthosts Internet Limited.<br/>
+                            Company registration No. 3656438. Registered in England and Wales.<br/>
+                            VAT No. 720821857. Registered office: Discovery House, 154 Southgate Street, Gloucester, GL1 2EX, United Kingdom.<br/>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+    <script type="text/javascript" src="../Scripts/jquery-1.7.js"></script>
+    <script type="text/javascript" src="../Scripts/Slick/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slideshow-container').slick({
+                infinite: true,
+                speed: 100,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 3,
+                variableWidth: true,
+                arrows: false,
+                dots: false,
+                cssEase: 'ease-out'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿.GridView {
+	font-family: Roboto;
+	width: 100%;
+	overflow-wrap: break-word;
+	border: 1px solid;
+	height: 100px;
+	border-radius: 4px;
+}
+
+.GridView th {
+    font-size: 24px;
+    font-weight: bold;  
+    padding:18px;
+    border:1px solid;
+}
+
+.GridView tr {
+    
+}
+
+.GridView td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid;
+}
